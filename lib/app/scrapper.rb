@@ -6,14 +6,7 @@ require 'csv'
 #require 'google_drive'
 
 class Scrapper
-  def perform
-    # Simuler le scrapping
-    {
-      "ABLEIGES" => "mairie.ableiges95@wanadoo.fr",
-      "AINCOURT" => "mairie.aincourt@wanadoo.fr",
-      # etc.
-    }
-  end
+  
   def decode_email(encoded_string)
     # La clé de déchiffrement est le premier caractère de la chaîne obfusquée
     r = encoded_string[0..1].to_i(16)
